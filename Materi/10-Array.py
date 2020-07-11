@@ -2,8 +2,6 @@
 # adalah kumpulan dari beberapa data yang memiliki tipe yang sama
 #Contoh Array of Integer [1,2,3,4,5]    indeks dimulai dari 0 sampai (n-1), dengan n adalah panjang arr
 
-
-
 ArrayOfChar = ['a','b','c','d','e']     #Menampilkan salah satu elemen array
 print(ArrayOfChar[0])
 
