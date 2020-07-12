@@ -1,26 +1,13 @@
-# NIM/Nama  : 16519171/Mgs. Tabrani
-# Tanggal   : 22 Oktober 2019
-# Deskripsi : Tugas Pendahuluan 3 Nomor 3
+'''This program requires a string then the program will display
+weather the string is palindrom or not'''
 
-#ProgramStringPalindrom
-#Menerima masukan sebuah string dan menetukan apakah string tersebut palindrom
+string = str(input("Please, input string: "))
 
-#KAMUS
-#string : str
-#string_reverse : [array of reverse of variabel string] 
+#Reverse the string
+stringReverse = string[::-1]
 
-#ALGORITMA
-
-#Menerima masukan string
-string = str(input("Masukkan string: "))
-
-#Membalik/reverse masukan string
-string_reverse = string[::-1]
-
-#Menampilkan apakah string palindrom atau bukan
-#Jika string palindrom
-if (string == string_reverse):
-    print(str(string) + " adalah palindrom")
-#Jika string tidak palindrom
+#Display weather the string is palindrom or not
+if (string == stringReverse):
+    print(str(string) + " is palindrom")
 else:
-    print(str(string) + " bukan palindrom")
+    print(str(string) + " is not palindrom")
