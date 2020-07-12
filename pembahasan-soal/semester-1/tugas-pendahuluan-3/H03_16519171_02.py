@@ -1,34 +1,22 @@
-# NIM/Nama  : 16519171/Mgs. Tabrani
-# Tanggal   : 22 Oktober 2019
-# Deskripsi : Tugas Pendahuluan Praktikum 3 Nomor 2
+'''This program will detect weather the two arrays are panagram or 
+not'''
 
-#ProgramAnagramArray
-#Membuat Array A dan B, memeriksa apakah A adalah anagram dari B
+#Inisialize an array named A
+lengthOfA = int(input("Input the length of A: "))
+A = [int for i in range(lengthOfA)]
+#Fill the arrays
+for i in range(lengthOf_A):
+    A[i] = int(input("Input the-(" +str(i+1) + ") element of A: "))
 
-#KAMUS
-#Banyak_A, Banyak_B, i, j : int
-#A, B : [array of int]
+#Inisializw an array named B
+lengthOfB = int(input("Input the length of B: "))
+B = [int for j in range(lengthOfB)]
+#Fill the array
+for j in range(lengthOfB):
+    B[j] = int(input("Input the-(" +str(j+1) + ") element of B: "))
 
-#ALGORITMA
-
-#Memasukkan banyak elemen array A dan membuat Array A
-Banyak_A = int(input("Masukkan banyaknya elemen A: "))
-A = [int for i in range(Banyak_A)]
-#Mengisi Array A
-for i in range(Banyak_A):
-    A[i] = int(input("Masukkan elemen A ke-" +str(i+1) + ": "))
-
-#Memasukkan banyak elemen array B dan membuat Array B
-Banyak_B = int(input("Masukkan banyaknya elemen B: "))
-B = [int for j in range(Banyak_B)]
-#Mengisi Array B
-for j in range(Banyak_B):
-    B[j] = int(input("Masukkan elemen A ke-" +str(j+1) + ": "))
-
-#Menampilkan apakah A anagram dari B
-#Jika A anagram dari B
-if (sorted(A)== sorted(B)):
-    print("A adalah anagram dari B")
-#Jika A bukan anagram dari B
+#Display weather the arrays are anagram or not
+if (sorted(A) == sorted(B)):
+    print("A is an anagram of B")
 else:
-    print("A bukan anagram dari B")
+    print("A is not an anagram of B")
