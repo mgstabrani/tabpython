@@ -1,27 +1,18 @@
-# NIM/Nama  : 16519171/Mgs. Tabrani
-# Tanggal   : 22 Oktober 2019
-# Deskripsi : Tugas Pendahuluan Praktikum 3 Nomor 1
+'''This program requires an array of integer, which firstly the length
+of array is required. The program will display the reversed of array'''
 
-#ProgramBilanganTerbalik
-#Menerima N buah bilangan dan menampilkannya serta menampilkannya kembali dengan urutan yang terbalik
 
-#KAMUS
-#Banyak_Bilangan, i : int
-#Elemen_Bilangan : [array of int]
+#Input the length of array and inisialize array
+N = int(input("Input N: "))
+elemenArray = [int for i in range(N)]
 
-#ALGORITMA
+#Fill the array
+for i in range(N):
+    elemenArray[i] = int(input())
 
-#Inisiasi banyak bilangan dan membuat array
-Banyak_Bilangan = int(input("Masukkan N: "))
-Elemen_Bilangan = [int for i in range(Banyak_Bilangan)]
-
-#Mengisi array
-for i in range(Banyak_Bilangan):
-    Elemen_Bilangan[i] = int(input())
-
-#Menampilkan array yang terbalik
-print("Hasil dibalik: ")
-for i in range(Banyak_Bilangan-1,-1,-1):
-    print(Elemen_Bilangan[i])
+#Display the reversed array
+print("Reversed array: ")
+for i in range(N-1,-1,-1):
+    print(elemenArray[i])
     
     
