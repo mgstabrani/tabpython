@@ -1,7 +1,7 @@
 # tabpython
 This Repository is a Python resources for my YouTube channel and my blogspot.
 
-#### Visit my blog at 
+### Visit my blog at 
 https://tabpython.blogspot.com
 
 ### Visit my Youtube channel at
